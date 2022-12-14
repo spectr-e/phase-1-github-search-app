@@ -88,6 +88,7 @@ function showRepo(repositories, profile) {
 function showRepoCard(repository, profile) {
   const repoList = profile.querySelector("ul#repos-list");
   const repoLink = document.createElement("a");
+  repoLink.target = "_blank"
   repoLink.className = "repo-url";
   repoLink.href = repository["html_url"];
   repoLink.textContent = repository["full_name"];
